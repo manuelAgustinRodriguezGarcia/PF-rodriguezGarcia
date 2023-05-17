@@ -400,6 +400,8 @@ iframe {
 
 .carousel-caption h5{
   font-size: 30px;
+  margin: 0;
+  padding: 5px;
 }
 
 .subtitulo-albumes {
@@ -918,6 +920,11 @@ input, textarea {
 
   .carousel-control-next, .carousel-control-prev {
     width: 25%;
+  }
+
+  
+  .carousel-caption h5 {
+    font-size: 20px;
   }
 
   .carousel-item img {
