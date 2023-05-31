@@ -1,0 +1,184 @@
+/*PINK FLOYD*/
+.fondo-pinkFloyd-fixed {
+  background-color: rgb(0, 0, 0);
+  background-image: url('../img/fondo-rainbow.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.intro-pinkFloyd {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  color: white;
+  background-color: black;
+}
+
+.intro-pinkFloyd h1 {
+  padding: 20px 0px;
+  font-size: 80px;
+  text-shadow: 0px 0px 10px white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.div-pinkFloyd {
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 90%;
+}
+
+.div-pinkFloyd:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.texto-pinkFloyd p {
+  font-size: 35px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.texto-pinkFloyd h3 {
+  font-size: 45px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.div-pinkFloyd img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.subtitulo-pinkFloyd {
+  font-size: 70px;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  text-shadow: 0px 0px 20px black;
+  font-weight: bold;
+}
+
+.contenido-pinkFloyd h4 {
+  font-size: 45px;
+  padding: 5px 0px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.contenido-pinkFloyd p {
+  font-size: 30px;
+}
+
+.contenido-pinkFloyd {
+  margin-top: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*PINK FLOYD - INTEGRANTES*/
+.div-integrante {
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px;
+  padding: 20px;
+  width: 540px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px 75px 50px;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+
+.div-integrante img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.div-integrante p {
+  margin-bottom: 0;
+}
+
+.div-syd {
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px;
+  padding: 20px;
+  width: 1040px;
+  height: auto;
+  text-align: left;
+  display: inline-block;
+  margin: 0px 50px 75px 50px;
+}
+
+.div-syd img{
+  width: 1000px;
+  border-radius: 10px;
+}
+
+/*PINK FLOYD - GALERIA*/
+.galeria-pinkFloyd  {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 500px);
+  gap: 15px;
+  padding: 50px;
+  padding-top: 35px;
+  grid-template-areas:
+  'area1 area2 area3'
+  'area1 area5 area3'
+  'area4 area5 area6'
+  'area7 area8 area8';
+}
+
+.imagen-galeria img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imagen-galeria {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.imagen1 {
+  grid-area: area1;
+}
+
+.imagen2 {
+  grid-area: area2;
+}
+
+.imagen3 {
+  grid-area: area3;
+}
+
+.imagen4 {
+  grid-area: area4;
+}
+.imagen5 {
+  grid-area: area5;
+}
+.imagen6 {
+  grid-area: area6;
+}
+.imagen7 {
+  grid-area: area7;
+}
+.imagen8 {
+  grid-area: area8;
+}

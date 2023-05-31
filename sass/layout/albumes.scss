@@ -1,0 +1,125 @@
+/*ALBUMES*/
+.fondo-albumes-fixed {
+  background-color: rgb(0, 0, 0);
+  background-image: url('../img/fondo-rainbow.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.carrusel-albumes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.carousel {
+  width: 90%;
+  border: solid 10px #252525;
+}
+
+.carousel-caption {
+  padding: 0;
+  background-color: rgba(25, 25, 25, 0.500);
+}
+
+.carousel-caption h5{
+  font-size: 30px;
+  margin: 0;
+  padding: 5px;
+}
+
+.subtitulo-albumes {
+  font-size: 70px;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  text-shadow: 0px 0px 20px black;
+  font-weight: bold;
+}
+
+.titulo-albumes {
+  display: flex;
+  padding-top: 60px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.titulo-albumes h1 {
+  font-size: 80px;
+  padding: 20px 0px;
+  padding-left: 50px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.div-albumes-general, .div-canciones-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 35px;
+}
+
+.div-albumes-general h3, .div-canciones-general h3 {
+  font-size: 40px;
+}
+
+.div-albumes-general p, .div-canciones-general p {
+  font-size: 30px;
+}
+
+/*album foto a la izquierda*/
+.album {
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+  gap: 20px;
+}
+
+.album p {
+  margin: 0;
+}
+
+.album h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/*album foto a la derecha*/
+.album:nth-child(2n){
+  flex-direction: row;
+}
+
+.album img {
+  width: 300px;
+  height: 300px;
+}
+
+.album a p{
+  display: inline-block;
+  font-size: 25px;
+  padding-top: 10px;
+  font-weight: normal;
+  transition: .3s;
+}
+
+.texto-album {
+  width: 100%;
+  height: 300px;
+  text-align: left;
+}
+
+.album a p:hover {
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}

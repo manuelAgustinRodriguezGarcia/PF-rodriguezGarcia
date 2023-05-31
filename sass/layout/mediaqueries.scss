@@ -1,0 +1,379 @@
+@media (max-width:480px) {
+  /*media-header*/
+  .navbar {
+    height: 60px;
+  }
+
+  .titulo-nav a{
+    font-size: 20px;
+  }
+
+  .titulo-nav img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+  }
+
+  .navbar-toggler {
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+  }
+
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /*media-footer*/
+  .menu-footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px ;
+    align-items: center;
+  }
+
+  /*media-index*/
+  .fondo-index-fixed {
+    background-image: url('../img/fondo-index-mobile.png');
+    height: 600px;
+  }
+
+  iframe {
+    width: 80%;
+    height: 200px;
+  }
+  .contenido-index{  
+    gap: 20px;
+  }
+
+  .contenido-index h1 {
+    font-size: 35px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .contenido-index p {
+    margin: 0;
+    border-radius: 0;
+    font-size: 20px;
+  }
+
+  .menu-footer li{
+    margin: 0px;
+  }
+  
+  .menu-footer h3 {
+    text-align: center;
+  }
+
+  .listas-footer h4{
+    text-align: center;
+  }
+  
+  /*media-pinkFloyd*/
+  .intro-pinkFloyd h1 {
+    font-size: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .intro-pinkFloyd{
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .div-pinkFloyd {
+    width: 90%;
+    padding-top: 10px;
+  } 
+  .div-pinkFloyd img{
+    width: 100%;
+  }
+
+  .div-pinkFloyd h3{
+    font-size: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  .div-pinkFloyd p {
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .contenido-pinkFloyd {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    gap: 30px;
+  }
+
+  .div-integrante{
+    width: 90%;
+    margin: 0;
+  }
+
+  .div-integrante h4{
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .div-integrante p{
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .div-integrante img{
+    width: 100%;
+  }
+
+  .div-syd {
+    width: 90%;
+    margin: 0;
+  }
+  
+  .div-syd h4{
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .div-syd p{
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .div-syd img{
+    width: 100%;
+  }
+
+  .div-pinkFloyd:nth-child(1n) {
+    flex-direction: column;
+  }
+
+  .div-pinkFloyd p {
+    font-size: 20px;
+  }
+
+  .div-pinkFloyd h3 {
+    font-size: 35px;
+  }
+  
+  .subtitulo-pinkFloyd{
+    padding: 0;
+    font-size: 55px;
+  }
+
+  .fondo-pinkFloyd-fixed {
+    background-image: url('../img/fondo-pinkFloyd-mobile.png');
+  }
+
+  .galeria-pinkFloyd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+  }
+
+  .imagen-galeria {
+    box-shadow: none;
+    width: 90%;
+  }
+
+  /*media-albumes*/
+  .fondo-albumes-fixed {
+    background-image: url('../img/fondo-pinkFloyd-mobile.png');
+  }
+
+  .carrusel-albumes {
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 25%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .carousel {
+    height: auto;
+    align-items: center;
+  }
+
+  .album {
+    flex-direction: column;
+    margin: 0;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .subtitulo-albumes{
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .div-albumes-general {
+    gap: 35px;
+  }
+
+  .texto-album {
+    height: auto;
+    text-align: center;
+  }
+
+  .album h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .album p {
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .album:nth-child(1n) {
+    flex-direction: column-reverse;
+  }
+
+  .titulo-albumes {
+    padding-top: 0;
+  }
+
+  .titulo-albumes h1 {
+    width: 100%;
+    font-size: 50px;
+    padding: 20px 0px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .texto-album a p{
+    font-size: 25px;
+    padding-top: 15px;
+  }
+
+  /*media-historia*/
+  .titulo-historia {
+    margin-top: 60px;
+  }
+
+  .titulo-historia h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .img-historia {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .titulo-historia p {
+    font-size: 20px;
+    text-align:justify ;
+    margin: 0;
+    border-radius: 0;
+    padding: 15px;
+  }
+
+  .subtitulo-historia {
+    font-size: 45px;
+    padding-bottom: 10px;
+  }
+
+  .subtitulo-historia-canciones {
+    font-size: 45px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .contenido-historia {
+    background-image: url('../img/fondo-pinkFloyd-mobile.png');
+  }
+
+  .curiosidades-historia{
+    gap: 35px ;
+  }
+
+  .container-curiosidad {
+    width: 90%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .container-curiosidad img {
+    width: 100%;
+  }
+
+  .container-curiosidad h4 {
+    font-size: 25px;
+  }
+
+  .container-curiosidad p {
+    font-size: 20px;
+  }
+
+  .div-canciones-general {
+    gap: 35px;
+  }
+
+  /*media-contacto*/
+  .fondo-contacto-fixed {
+    background-image: url('../img/fondo-pinkFloyd-mobile.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .form-total {
+    width: 95%;
+    margin: 0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 35px;
+  }
+
+  .form-total p {
+    font-size: 30px;
+  }
+
+  .titulo-contacto{
+    text-align: center;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  .titulo-contacto h1 {
+    font-size: 60px;
+    padding: 0;
+    padding-top: 15px;
+    margin-top: 60px;
+    text-shadow: 0px 0px 10px black;
+    font-weight: bold;
+  }
+
+  .subtitulo-contacto {
+    padding: 15px;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .input-dato, .radio-cancion, .radio-album {
+    font-size: 20px;
+  }
+
+  .caja-comentarios {
+    padding: 0;
+  }
+  .caja-comentarios textarea {
+    font-size: 19px;
+    height: 150px;
+  }
+}

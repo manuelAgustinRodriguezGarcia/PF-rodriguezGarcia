@@ -1,0 +1,41 @@
+/*HEADER*/
+.navbar {
+  background-color: white;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px ;
+}
+
+.offcanvas-header {
+  justify-content: right;
+}
+
+.nav-link {
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.offcanvas-body {
+  padding: 0px 20px;
+}
+
+.titulo-nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+}
+
+.titulo-nav a {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container-fluid img {
+  width: 50px;
+}

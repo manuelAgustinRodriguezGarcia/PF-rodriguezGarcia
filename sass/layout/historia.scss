@@ -1,0 +1,99 @@
+/*HISTORIA*/
+.contenido-historia {
+  background-color: rgb(0, 0, 0);
+  background-image: url('../img/fondo-rainbow.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.titulo-historia {
+  display: inline-block;
+  margin-top: 60px;
+  width: 100%;
+  color: white;
+}
+
+.titulo-historia h1 {
+  text-align: right;
+  font-size: 80px;
+  padding: 20px;
+  background-color: black;
+  text-shadow: 0px 0px 10px white;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.img-historia {
+  width: 100%;
+}
+
+.titulo-historia p {
+  background-color: rgb(25, 25, 25);
+  margin: 20px;
+  padding: 20px;
+  font-size: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.subtitulo-historia {
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  text-shadow: 0px 0px 20px black;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.subtitulo-historia-canciones {
+  width: 100%;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  text-shadow: 0px 0px 20px black;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.curiosidades-historia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-curiosidad {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+
+.container-curiosidad h4 {
+  padding-top: 15px;
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.container-curiosidad p{
+  padding-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.container-curiosidad img {
+  width: 500px;
+  border-radius: 10px;
+}
