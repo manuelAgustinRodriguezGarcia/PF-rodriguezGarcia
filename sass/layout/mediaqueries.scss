@@ -72,14 +72,21 @@
   }
   
   /*media-pinkFloyd*/
-  .intro-pinkFloyd h1 {
+  .titulo-pinkFloyd {
+    margin: 0;
+    padding-top: 60px;
+  }
+
+  .titulo-pinkFloyd h1 {
     font-size: 50px;
+    padding-top: 10px;
     padding-bottom: 0;
     margin-bottom: 0;
   }
 
   .intro-pinkFloyd{
-    gap: 20px;
+    gap: 30px;
+    padding-top: 10px;
     margin-bottom: 20px;
   }
 
@@ -87,6 +94,7 @@
     width: 90%;
     padding-top: 10px;
   } 
+
   .div-pinkFloyd img{
     width: 100%;
   }
