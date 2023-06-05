@@ -18,74 +18,61 @@ a {
 }
 
 /*FOOTER*/
-.footer-general {
+.footer {
   background-color: white;
   padding: 60px 20px 20px 20px;
   width: 100%;
 }
-
-.menu-footer {
+.footer-listas {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0;
+  margin: 0px;
 }
-
-.menu-footer h3 {
+.footer-listas h3 {
   color: black;
   font-size: 20px;
   text-decoration: underline;
   text-align: left;
   font-weight: bold;
 }
-
-.menu-footer li {
+.footer-listas li {
   justify-content: space-between;
 }
-
-.menu-footer {
-  margin: 0px;
-}
-
-.menu-footer ul li a {
+.footer-listas ul li a {
   text-align: left;
   transition: 0.3s;
 }
-
-.logo-instagram {
-  width: 70px;
-  border-radius: 20px;
-  transition: 0.3s;
+.footer-listas ul li a:hover {
+  text-shadow: 0px 0px 2px rgba(37, 37, 37, 0.4039215686);
 }
-
-.logo-spotify {
-  width: 70px;
-  border-radius: 50%;
-  transition: 0.3s;
+.footer-listas img:hover {
+  box-shadow: 0px 0px 20px rgba(37, 37, 37, 0.4039215686);
 }
-
-.listas-footer {
+.footer-listas-internas {
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.listas-footer h4 {
+.footer-listas-internas h4 {
   font-size: 15px;
   text-align: left;
   color: black;
   margin: 0;
   font-weight: bold;
 }
-
-.menu-footer ul li a:hover {
-  text-shadow: 0px 0px 2px rgba(37, 37, 37, 0.4039215686);
+.footer-listas-internas-ig {
+  width: 70px;
+  border-radius: 20px;
+  transition: 0.3s;
 }
-
-.menu-footer img:hover {
-  box-shadow: 0px 0px 20px rgba(37, 37, 37, 0.4039215686);
+.footer-listas-internas-sp {
+  width: 70px;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 /*HEADER*/
@@ -144,13 +131,14 @@ a {
   background-color: black;
 }
 
-.contenido-index {
+.index-contenido {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
-
-.contenido-index h1 {
+.index-contenido h1 {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 80px;
@@ -160,13 +148,7 @@ a {
   text-shadow: 0px 0px 10px white;
   font-family: "Questrial", sans-serif;
 }
-
-.contenido-index {
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.contenido-index p {
+.index-contenido p {
   border-radius: 10px;
   margin: 35px 50px;
   padding: 15px;
@@ -175,8 +157,7 @@ a {
   background-color: rgb(25, 25, 25);
   text-align: center;
 }
-
-.video-index {
+.index-contenido-video {
   border: 3px solid rgb(25, 25, 25);
   border-radius: 10px;
 }
@@ -195,7 +176,7 @@ iframe {
   background-position: center;
 }
 
-.intro-pinkFloyd {
+.pinkFloyd {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -206,23 +187,7 @@ iframe {
   color: white;
   background-color: black;
 }
-
-.titulo-pinkFloyd {
-  padding-top: 76px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}
-
-.titulo-pinkFloyd h1 {
-  font-size: 80px;
-  text-shadow: 0 0 10px white;
-  margin: 0;
-  font-weight: bold;
-}
-
-.div-pinkFloyd {
+.pinkFloyd-dato {
   background-color: rgb(25, 25, 25);
   border-radius: 10px;
   height: auto;
@@ -232,27 +197,37 @@ iframe {
   align-items: center;
   width: 90%;
 }
-
-.div-pinkFloyd:nth-child(2n) {
+.pinkFloyd-dato img {
+  height: 350px;
+  object-fit: cover;
+}
+.pinkFloyd-dato:nth-child(2n) {
   flex-direction: row-reverse;
 }
-
-.texto-pinkFloyd p {
+.pinkFloyd-dato-texto p {
   font-size: 35px;
   text-align: left;
   margin-bottom: 0;
 }
-
-.texto-pinkFloyd h3 {
+.pinkFloyd-dato-texto h3 {
   font-size: 45px;
   text-align: left;
   font-weight: bold;
   margin-bottom: 0;
 }
 
-.div-pinkFloyd img {
-  height: 350px;
-  object-fit: cover;
+.titulo-pinkFloyd {
+  padding-top: 76px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.titulo-pinkFloyd h1 {
+  font-size: 80px;
+  text-shadow: 0 0 10px white;
+  margin: 0;
+  font-weight: bold;
 }
 
 .subtitulo-pinkFloyd {
@@ -262,29 +237,27 @@ iframe {
   color: white;
   text-shadow: 0px 0px 20px black;
   font-weight: bold;
+  margin: 0;
 }
 
-.contenido-pinkFloyd h4 {
-  font-size: 45px;
-  padding: 5px 0px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.contenido-pinkFloyd p {
-  font-size: 30px;
-}
-
-.contenido-pinkFloyd {
+/*PINK FLOYD - INTEGRANTES*/
+.integrantes {
   margin-top: 35px;
   color: white;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-/*PINK FLOYD - INTEGRANTES*/
-.div-integrante {
+.integrantes h4 {
+  font-size: 45px;
+  padding: 5px 0px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.integrantes p {
+  font-size: 30px;
+}
+.integrantes-contenedor {
   background-color: rgb(25, 25, 25);
   border-radius: 10px;
   padding: 20px;
@@ -295,17 +268,14 @@ iframe {
   margin: 0px 50px 75px 50px;
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
 }
-
-.div-integrante img {
+.integrantes-contenedor img {
   width: 100%;
   border-radius: 10px;
 }
-
-.div-integrante p {
+.integrantes-contenedor p {
   margin-bottom: 0;
 }
-
-.div-syd {
+.integrantes-syd {
   background-color: rgb(25, 25, 25);
   border-radius: 10px;
   padding: 20px;
@@ -315,10 +285,12 @@ iframe {
   display: inline-block;
   margin: 0px 50px 75px 50px;
 }
-
-.div-syd img {
+.integrantes-syd img {
   width: 1000px;
   border-radius: 10px;
+}
+.integrantes-syd p {
+  margin: 0;
 }
 
 /*PINK FLOYD - GALERIA*/
@@ -333,17 +305,16 @@ iframe {
   grid-template-areas: "area1 area2 area3" "area1 area5 area3" "area4 area5 area6" "area7 area8 area8";
 }
 
+.imagen-galeria {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px black;
+}
 .imagen-galeria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.imagen-galeria {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px 0px black;
 }
 
 .imagen1 {
@@ -422,13 +393,12 @@ iframe {
 
 .titulo-albumes {
   display: flex;
-  padding-top: 60px;
+  padding-top: 76px;
   width: 100%;
   color: white;
   text-align: left;
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
-
 .titulo-albumes h1 {
   font-size: 80px;
   padding: 20px 0px;
@@ -437,24 +407,20 @@ iframe {
   font-weight: bold;
 }
 
-.div-albumes-general, .div-canciones-general {
+.albumes {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   padding-bottom: 35px;
 }
-
-.div-albumes-general h3, .div-canciones-general h3 {
+.albumes h3 {
   font-size: 40px;
 }
-
-.div-albumes-general p, .div-canciones-general p {
+.albumes p {
   font-size: 30px;
 }
-
-/*album foto a la izquierda*/
-.album {
+.albumes-item {
   background-color: rgb(25, 25, 25);
   border-radius: 10px;
   width: 90%;
@@ -465,62 +431,89 @@ iframe {
   color: white;
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
   gap: 20px;
+  /*album foto a la derecha*/
 }
-
-.album p {
+.albumes-item p {
   margin: 0;
 }
-
-.album h3 {
+.albumes-item h3 {
   font-weight: bold;
   margin-bottom: 0;
 }
-
-/*album foto a la derecha*/
-.album:nth-child(2n) {
-  flex-direction: row;
-}
-
-.album img {
+.albumes-item img {
   width: 300px;
   height: 300px;
 }
-
-.album a p {
+.albumes-item a p {
   display: inline-block;
   font-size: 25px;
   padding-top: 10px;
   font-weight: normal;
   transition: 0.3s;
 }
-
-.texto-album {
+.albumes-item a p:hover {
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.albumes-item:nth-child(2n) {
+  flex-direction: row;
+}
+.albumes-item-texto {
   width: 100%;
   height: 300px;
   text-align: left;
 }
 
-.album a p:hover {
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-
 /*HISTORIA*/
-.contenido-historia {
+.historia {
   background-color: rgb(0, 0, 0);
   background-image: url("../img/fondo-rainbow.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
+.historia-curiosidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.historia-curiosidades-item {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+.historia-curiosidades-item h4 {
+  padding-top: 15px;
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+}
+.historia-curiosidades-item p {
+  padding-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+.historia-curiosidades-item img {
+  width: 500px;
+  border-radius: 10px;
+}
 
-.titulo-historia {
+.introHistoria {
   display: inline-block;
   margin-top: 60px;
   width: 100%;
   color: white;
 }
-
-.titulo-historia h1 {
+.introHistoria h1 {
   text-align: right;
   font-size: 80px;
   padding: 20px;
@@ -529,18 +522,16 @@ iframe {
   margin-bottom: 0;
   font-weight: bold;
 }
-
-.img-historia {
-  width: 100%;
-}
-
-.titulo-historia p {
+.introHistoria p {
   background-color: rgb(25, 25, 25);
   margin: 20px;
   padding: 20px;
   font-size: 40px;
   border-radius: 10px;
   text-align: center;
+}
+.introHistoria-img {
+  width: 100%;
 }
 
 .subtitulo-historia {
@@ -564,44 +555,44 @@ iframe {
   margin-bottom: 0;
 }
 
-.curiosidades-historia {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.container-curiosidad {
-  width: 540px;
+.canciones {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #252525;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 0px 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+  gap: 50px;
+  padding-bottom: 35px;
 }
-
-.container-curiosidad h4 {
-  padding-top: 15px;
+.canciones h3 {
+  font-size: 40px;
+}
+.canciones p {
   font-size: 30px;
-  margin: 0;
-  font-weight: bold;
 }
-
-.container-curiosidad p {
-  padding-top: 5px;
-  font-size: 25px;
-  text-align: center;
-  margin: 0;
-}
-
-.container-curiosidad img {
-  width: 500px;
+.canciones-item {
+  background-color: rgb(25, 25, 25);
   border-radius: 10px;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+  gap: 20px;
+}
+.canciones-item-txt p {
+  margin: 0;
+}
+.canciones-item-txt h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.canciones-item img {
+  width: 300px;
+  height: 300px;
+}
+.canciones-item:nth-child(2n) {
+  flex-direction: row;
 }
 
 /*CONTACTO*/
@@ -617,7 +608,6 @@ iframe {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.8);
 }
-
 .titulo-contacto h1 {
   display: inline-block;
   margin-top: 75px;
@@ -640,7 +630,7 @@ iframe {
 }
 
 /*FORMULARIOS*/
-.form-total {
+.form {
   display: flex;
   flex-direction: column;
   background-color: rgba(25, 25, 25, 0.8);
@@ -651,75 +641,47 @@ iframe {
   padding: 20px;
   border-radius: 5px;
 }
-
-fieldset {
-  border: none;
-}
-
-.datos-personales p {
+.form-datos p {
   text-align: left;
   font-size: 40px;
   margin-bottom: 10px;
 }
-
-.album-favorito p {
+.form-album p {
   text-align: left;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
-.cancion-favorita p {
+.form-cancion p {
   text-align: left;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
-.comentarios p {
+.form-coment p {
   text-align: left;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
-.opciones-radio-cancion, .opciones-radio-album, .opciones-datos-personales {
-  text-align: left;
-  padding: 0px 20px;
-}
-
-.input-dato, .radio-cancion, .radio-album {
-  padding: 8px 0px;
-  font-size: 25px;
-  border-radius: 5px;
-}
-
-.caja-comentarios {
+.form-coment-box {
   padding-top: 8px;
   font-size: 20px;
 }
-
-.caja-comentarios textarea {
+.form-coment-box textarea {
   width: 100%;
   height: 200px;
   resize: none;
   font-size: 30px;
   border-radius: 5px;
 }
-
-input, textarea {
-  font-size: 15px;
-  color: black;
-}
-
-.botones {
+.form-botones {
   padding-top: 15px;
   display: flex;
   gap: 15px;
   justify-content: right;
 }
-
-.botones button {
+.form-botones button {
   font-size: 20px;
   color: black;
   width: 100px;
@@ -728,24 +690,35 @@ input, textarea {
   border: none;
   transition: 0.4s;
 }
-
-.botones button:hover {
+.form-botones button:hover {
   background-color: black;
   color: white;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-cancion-sector, .form-album-sector, .form-datos-sector {
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.form-datos-sector-input, .form-cancion-sector-radio, .form-album-sector-radio {
+  padding: 8px 0px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+input, textarea {
+  font-size: 15px;
+  color: black;
 }
 
 @media (max-width: 480px) {
   /*media-header*/
   .navbar {
     height: 60px;
-  }
-  .titulo-nav a {
-    font-size: 20px;
-  }
-  .titulo-nav img {
-    height: 25px;
-    width: 25px;
-    object-fit: cover;
   }
   .navbar-toggler {
     height: 30px;
@@ -756,12 +729,29 @@ input, textarea {
     width: 20px;
     height: 20px;
   }
+  .titulo-nav a {
+    font-size: 20px;
+  }
+  .titulo-nav img {
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+  }
   /*media-footer*/
-  .menu-footer {
+  .footer-listas {
     flex-direction: column;
     justify-content: center;
     gap: 35px;
     align-items: center;
+  }
+  .footer-listas li {
+    margin: 0px;
+  }
+  .footer-listas h3 {
+    text-align: center;
+  }
+  .footer-listas-internas h4 {
+    text-align: center;
   }
   /*media-index*/
   .fondo-index-fixed {
@@ -772,27 +762,18 @@ input, textarea {
     width: 80%;
     height: 200px;
   }
-  .contenido-index {
+  .index-contenido {
     gap: 20px;
   }
-  .contenido-index h1 {
+  .index-contenido h1 {
     font-size: 35px;
     padding: 0;
     margin-bottom: 0;
   }
-  .contenido-index p {
+  .index-contenido p {
     margin: 0;
     border-radius: 0;
     font-size: 20px;
-  }
-  .menu-footer li {
-    margin: 0px;
-  }
-  .menu-footer h3 {
-    text-align: center;
-  }
-  .listas-footer h4 {
-    text-align: center;
   }
   /*media-pinkFloyd*/
   .titulo-pinkFloyd {
@@ -805,70 +786,64 @@ input, textarea {
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  .intro-pinkFloyd {
+  .pinkFloyd {
     gap: 30px;
     padding-top: 10px;
     margin-bottom: 20px;
   }
-  .div-pinkFloyd {
+  .pinkFloyd-dato {
     width: 90%;
     padding-top: 10px;
   }
-  .div-pinkFloyd img {
+  .pinkFloyd-dato img {
     width: 100%;
   }
-  .div-pinkFloyd h3 {
-    font-size: 30px;
+  .pinkFloyd-dato h3 {
+    font-size: 35px;
     padding-bottom: 5px;
     text-align: center;
   }
-  .div-pinkFloyd p {
+  .pinkFloyd-dato p {
     font-size: 20px;
     text-align: justify;
   }
-  .contenido-pinkFloyd {
+  .pinkFloyd-dato:nth-child(1n) {
+    flex-direction: column;
+  }
+  .integrantes {
     margin-top: 15px;
     margin-bottom: 20px;
     gap: 30px;
   }
-  .div-integrante {
+  .integrantes-contenedor {
     width: 90%;
     margin: 0;
   }
-  .div-integrante h4 {
+  .integrantes-contenedor h4 {
     font-size: 35px;
     text-align: center;
   }
-  .div-integrante p {
+  .integrantes-contenedor p {
     font-size: 20px;
     text-align: justify;
   }
-  .div-integrante img {
+  .integrantes-contenedor img {
     width: 100%;
   }
-  .div-syd {
+  .integrantes-syd {
     width: 90%;
     margin: 0;
   }
-  .div-syd h4 {
+  .integrantes-syd h4 {
     font-size: 35px;
     text-align: center;
   }
-  .div-syd p {
+  .integrantes-syd p {
     font-size: 20px;
     text-align: justify;
   }
-  .div-syd img {
+  .integrantes-syd img {
     width: 100%;
-  }
-  .div-pinkFloyd:nth-child(1n) {
-    flex-direction: column;
-  }
-  .div-pinkFloyd p {
-    font-size: 20px;
-  }
-  .div-pinkFloyd h3 {
-    font-size: 35px;
   }
   .subtitulo-pinkFloyd {
     padding: 0;
@@ -909,33 +884,37 @@ input, textarea {
     height: auto;
     align-items: center;
   }
-  .album {
+  .subtitulo-albumes {
+    padding: 0;
+    font-size: 40px;
+  }
+  .albumes {
+    gap: 35px;
+  }
+  .albumes-item {
     flex-direction: column;
     margin: 0;
     padding: 15px;
     gap: 15px;
   }
-  .subtitulo-albumes {
-    padding: 0;
-    font-size: 40px;
-  }
-  .div-albumes-general {
-    gap: 35px;
-  }
-  .texto-album {
-    height: auto;
-    text-align: center;
-  }
-  .album h3 {
+  .albumes-item h3 {
     font-size: 35px;
     text-align: center;
   }
-  .album p {
+  .albumes-item p {
     font-size: 20px;
     text-align: justify;
   }
-  .album:nth-child(1n) {
+  .albumes-item:nth-child(1n) {
     flex-direction: column-reverse;
+  }
+  .albumes-item-texto {
+    height: auto;
+    text-align: center;
+  }
+  .albumes-item-texto a p {
+    font-size: 25px;
+    padding-top: 15px;
   }
   .titulo-albumes {
     padding-top: 0;
@@ -947,28 +926,24 @@ input, textarea {
     margin-top: 60px;
     text-align: center;
   }
-  .texto-album a p {
-    font-size: 25px;
-    padding-top: 15px;
-  }
   /*media-historia*/
-  .titulo-historia {
+  .introHistoria {
     margin-top: 60px;
   }
-  .titulo-historia h1 {
+  .introHistoria h1 {
     font-size: 50px;
     text-align: center;
   }
-  .img-historia {
-    height: 300px;
-    object-fit: cover;
-  }
-  .titulo-historia p {
+  .introHistoria p {
     font-size: 20px;
     text-align: justify;
     margin: 0;
     border-radius: 0;
     padding: 15px;
+  }
+  .introHistoria-img {
+    height: 300px;
+    object-fit: cover;
   }
   .subtitulo-historia {
     font-size: 45px;
@@ -979,28 +954,45 @@ input, textarea {
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  .contenido-historia {
+  .historia {
     background-image: url("../img/fondo-pinkFloyd-mobile.png");
   }
-  .curiosidades-historia {
+  .historia-curiosidades {
     gap: 35px;
   }
-  .container-curiosidad {
+  .historia-curiosidades-item {
     width: 90%;
     margin: 0;
     padding: 15px;
   }
-  .container-curiosidad img {
+  .historia-curiosidades-item img {
     width: 100%;
   }
-  .container-curiosidad h4 {
+  .historia-curiosidades-item h4 {
     font-size: 25px;
   }
-  .container-curiosidad p {
+  .historia-curiosidades-item p {
     font-size: 20px;
   }
-  .div-canciones-general {
+  .canciones {
     gap: 35px;
+  }
+  .canciones-item {
+    flex-direction: column;
+    margin: 0;
+    padding: 15px;
+    gap: 15px;
+  }
+  .canciones-item:nth-child(1n) {
+    flex-direction: column-reverse;
+  }
+  .canciones-item-txt h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .canciones-item-txt p {
+    font-size: 20px;
+    text-align: justify;
   }
   /*media-contacto*/
   .fondo-contacto-fixed {
@@ -1011,15 +1003,22 @@ input, textarea {
     align-items: center;
     gap: 15px;
   }
-  .form-total {
+  .form {
     width: 95%;
     margin: 0;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 35px;
   }
-  .form-total p {
+  .form p {
     font-size: 30px;
+  }
+  .form-coment-box {
+    padding: 0;
+  }
+  .form-coment-box textarea {
+    font-size: 19px;
+    height: 150px;
   }
   .titulo-contacto {
     text-align: center;
@@ -1039,15 +1038,8 @@ input, textarea {
     margin: 0;
     font-size: 30px;
   }
-  .input-dato, .radio-cancion, .radio-album {
+  .form-datos-sector-input, .form-cancion-sector-radio, .form-album-sector-radio {
     font-size: 20px;
-  }
-  .caja-comentarios {
-    padding: 0;
-  }
-  .caja-comentarios textarea {
-    font-size: 19px;
-    height: 150px;
   }
 }
 
