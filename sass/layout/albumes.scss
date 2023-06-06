@@ -16,17 +16,15 @@
 .carousel {
   width: 90%;
   border: solid 10px #252525;
-}
-
-.carousel-caption {
-  padding: 0;
-  background-color: rgba(25, 25, 25, 0.500);
-}
-
-.carousel-caption h5{
-  font-size: 30px;
-  margin: 0;
-  padding: 5px;
+  &-caption {
+    padding: 0;
+    background-color: rgba(25, 25, 25, 0.500);
+    h5{
+      font-size: 30px;
+      margin: 0;
+      padding: 5px;
+    }
+  }
 }
 
 .subtitulo-albumes {
@@ -88,7 +86,7 @@
       width: 300px;
       height: 300px;
     }
-    a p{
+    a p {
       display: inline-block;
       font-size: 25px;
       padding-top: 10px;

@@ -13,11 +13,11 @@
     }
   }
 
-  .titulo-nav{
-    a{
+  .titulo-nav {
+    a {
       font-size: 20px;
     }
-    img{
+    img {
       height: 25px;
       width: 25px;
       object-fit: cover;
@@ -125,7 +125,7 @@
     &-syd {
       width: 90%;
       margin: 0;
-      h4{
+      h4 {
         font-size: 35px;
         text-align: center;
       }
@@ -139,7 +139,7 @@
     }
   }
 
-  .subtitulo-pinkFloyd{
+  .subtitulo-pinkFloyd {
     padding: 0;
     font-size: 55px;
   }
@@ -188,7 +188,7 @@
     align-items: center;
   }
 
-  .subtitulo-albumes{
+  .subtitulo-albumes {
     padding: 0;
     font-size: 40px;
   }
@@ -214,7 +214,7 @@
       &-texto {
         height: auto;
         text-align: center;
-        a p{
+        a p {
           font-size: 25px;
           padding-top: 15px;
         }
@@ -294,7 +294,7 @@
       &:nth-child(1n) {
         flex-direction: column-reverse;
       }
-      &-txt{
+      &-txt {
         h3 {
           font-size: 35px;
           text-align: center;
@@ -335,7 +335,7 @@
     }
   }
 
-  .titulo-contacto{
+  .titulo-contacto {
     text-align: center;
     background-color: rgb(25, 25, 25, 0.800);
     margin: 0;
