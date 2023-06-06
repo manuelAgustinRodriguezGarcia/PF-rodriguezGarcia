@@ -2,9 +2,7 @@
 .fondo-pinkFloyd-fixed {
   background-color: rgb(0, 0, 0);
   background-image: url('../img/fondo-rainbow.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  @include fondo-fixed;
 }
 
 .pinkFloyd {
@@ -18,7 +16,7 @@
   color: white;
   background-color: black;
   &-dato {
-    background-color: rgb(25, 25, 25);
+    background-color: $principal;
     border-radius: 10px;
     height: auto;
     padding: 20px;
@@ -90,7 +88,7 @@
     font-size: 30px;
   }
   &-contenedor {
-    background-color: rgb(25, 25, 25);
+    background-color: $principal;
     border-radius: 10px;
     padding: 20px;
     width: 540px;
@@ -108,7 +106,7 @@
     }
   }
   &-syd {
-    background-color: rgb(25, 25, 25);
+    background-color: $principal;
     border-radius: 10px;
     padding: 20px;
     width: 1040px;

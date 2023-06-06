@@ -125,6 +125,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .div-main {
@@ -174,6 +175,7 @@ iframe {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .pinkFloyd {
@@ -356,6 +358,7 @@ iframe {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .carrusel-albumes {
@@ -470,6 +473,7 @@ iframe {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .historia-curiosidades {
   display: flex;
@@ -597,10 +601,11 @@ iframe {
 
 /*CONTACTO*/
 .fondo-contacto-fixed {
-  background-color: rgb(0, 0, 0);
-  background-repeat: no-repeat;
+  background-image: url("../img/fondo-contacto.png");
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   padding-bottom: 20px;
 }
 
@@ -613,20 +618,17 @@ iframe {
   margin-top: 75px;
   margin-bottom: 0;
   padding: 20px;
+  padding-bottom: 15px;
   color: white;
   font-size: 80px;
   text-shadow: 0px 0px 10px white;
   font-weight: bold;
 }
-
-.subtitulo-contacto {
+.titulo-contacto p {
   text-align: center;
-  background-color: rgba(25, 25, 25, 0.8);
   font-size: 50px;
   padding: 20px;
-  margin: 0px 50px;
-  margin-top: 20px;
-  border-radius: 5px;
+  padding-top: 0;
 }
 
 /*FORMULARIOS*/
@@ -645,6 +647,12 @@ iframe {
   text-align: left;
   font-size: 40px;
   margin-bottom: 10px;
+}
+.form-datos label {
+  width: 20%;
+}
+.form-datos input {
+  width: 50%;
 }
 .form-album p {
   text-align: left;
@@ -1022,7 +1030,7 @@ input, textarea {
   }
   .titulo-contacto {
     text-align: center;
-    background-color: transparent;
+    background-color: rgba(25, 25, 25, 0.8);
     margin: 0;
   }
   .titulo-contacto h1 {
@@ -1030,10 +1038,10 @@ input, textarea {
     padding: 0;
     padding-top: 15px;
     margin-top: 60px;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
     font-weight: bold;
   }
-  .subtitulo-contacto {
+  .titulo-contacto p {
     padding: 15px;
     margin: 0;
     font-size: 30px;
