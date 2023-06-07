@@ -10,7 +10,7 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .carousel {
@@ -28,21 +28,26 @@
 }
 
 .subtitulo-albumes {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
   font-size: 70px;
   text-align: center;
-  padding-top: 15px;
-  color: white;
+  color: rgb(25, 25, 25);
   font-weight: bold;
-  @extend .sombra-dark;
+  padding: 20px 0;
+  margin: 0;
+  margin-top: 10px;
+  text-shadow: 0px 0px 5px;
 }
 
 .titulo-albumes {
   display: flex;
+  flex-direction: column;
   padding-top: 76px;
   width: 100%;
   color: white;
   text-align: left;
-  @extend .sombra-dark;
+  @extend .sombra-light;
   h1 {
     font-size: 80px;
     padding: 20px 0px;
@@ -56,6 +61,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
   gap: 50px;
   padding-bottom: 35px;
   h3 {

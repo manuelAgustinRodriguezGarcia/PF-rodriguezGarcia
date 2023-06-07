@@ -17,11 +17,11 @@ a {
   color: white;
 }
 
-.sombra-dark, .titulo-albumes, .subtitulo-albumes, .footer-listas ul li a:hover {
-  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+.sombra-dark, .footer-listas ul li a:hover {
+  text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
-.sombra-light, .titulo-contacto h1, .subtitulo-historia-canciones, .subtitulo-historia, .introHistoria h1, .albumes-item a p:hover, .index-contenido h1 {
+.sombra-light, .titulo-contacto h1, .subtitulo-historia-canciones, .subtitulo-historia, .introHistoria h1, .albumes-item a p:hover, .titulo-albumes, .index-contenido h1 {
   text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
@@ -375,7 +375,7 @@ iframe {
   justify-content: center;
   position: relative;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .carousel {
@@ -393,15 +393,21 @@ iframe {
 }
 
 .subtitulo-albumes {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
   font-size: 70px;
   text-align: center;
-  padding-top: 15px;
-  color: white;
+  color: rgb(25, 25, 25);
   font-weight: bold;
+  padding: 20px 0;
+  margin: 0;
+  margin-top: 10px;
+  text-shadow: 0px 0px 5px;
 }
 
 .titulo-albumes {
   display: flex;
+  flex-direction: column;
   padding-top: 76px;
   width: 100%;
   color: white;
@@ -419,6 +425,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
   gap: 50px;
   padding-bottom: 35px;
 }
@@ -890,8 +897,8 @@ input, textarea {
     align-items: center;
   }
   .subtitulo-albumes {
-    padding: 0;
-    font-size: 40px;
+    padding: 15px;
+    font-size: 45px;
   }
   .albumes {
     gap: 35px;
