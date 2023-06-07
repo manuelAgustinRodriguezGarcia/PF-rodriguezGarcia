@@ -30,7 +30,7 @@
       transition: .1s;
     }
     ul li a:hover {
-      text-shadow: 0px 0px 2px #25252567;
+      @extend .sombra-dark;
     }
     img:hover {
       transform: translate(0, -10px);

@@ -32,8 +32,8 @@
   text-align: center;
   padding-top: 15px;
   color: white;
-  text-shadow: 0px 0px 20px black;
   font-weight: bold;
+  @extend .sombra-dark;
 }
 
 .titulo-albumes {
@@ -42,7 +42,7 @@
   width: 100%;
   color: white;
   text-align: left;
-  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  @extend .sombra-dark;
   h1 {
     font-size: 80px;
     padding: 20px 0px;
@@ -94,7 +94,7 @@
       transition: .3s;
     }
     a p:hover {
-      text-shadow: 0px 0px 10px rgb(255, 255, 255);
+      @extend .sombra-light;
     }
     /*album foto a la derecha*/
     &:nth-child(2n){

@@ -344,7 +344,7 @@
       padding: 0;
       padding-top: 15px;
       margin-top: 60px;
-      text-shadow: 0px 0px 10px rgb(255, 255, 255);
+      @extend .sombra-light;
       font-weight: bold;
     }
     p {
