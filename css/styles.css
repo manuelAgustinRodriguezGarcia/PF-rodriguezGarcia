@@ -21,7 +21,7 @@ a {
   text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
-.sombra-light, .titulo-contacto h1, .subtitulo-historia-canciones, .subtitulo-historia, .introHistoria h1, .albumes-item a p:hover, .titulo-albumes, .index-contenido h1 {
+.sombra-light, .titulo-contacto h1, .subtitulo-historia-canciones, .subtitulo-historia, .introHistoria h1, .albumes-item a p:hover, .titulo-albumes, .intro-pinkFloyd h1, .index-contenido h1 {
   text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
@@ -187,10 +187,38 @@ iframe {
   background-repeat: no-repeat;
 }
 
+.intro-pinkFloyd {
+  display: flex;
+  align-items: center;
+  margin: 0px 30px;
+  margin-top: 76px;
+  gap: 60px;
+  padding: 60px 0px;
+}
+.intro-pinkFloyd p {
+  font-size: 50px;
+  margin: 0;
+}
+.intro-pinkFloyd h1 {
+  font-size: 400px;
+  line-height: 75%;
+  margin: 0;
+  text-align: left;
+}
+.intro-pinkFloyd img {
+  width: 640px;
+  border-radius: 10px;
+  transition: 0.4s;
+  filter: grayscale(1);
+}
+.intro-pinkFloyd img:hover {
+  filter: grayscale(0);
+  box-shadow: 0px 0px 25px 5px rgb(255, 110, 228);
+}
+
 .pinkFloyd {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
   width: 100%;
@@ -253,7 +281,7 @@ iframe {
 
 /*PINK FLOYD - INTEGRANTES*/
 .integrantes {
-  margin-top: 35px;
+  padding-top: 35px;
   color: white;
   display: flex;
   justify-content: center;
@@ -652,11 +680,19 @@ iframe {
   font-size: 40px;
   margin-bottom: 10px;
 }
-.form-datos label {
-  width: 20%;
+.form-datos-sector {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.form-datos input {
-  width: 50%;
+.form-datos-sector input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 5px;
 }
 .form-album p {
   text-align: left;
@@ -788,15 +824,26 @@ input, textarea {
     font-size: 20px;
   }
   /*media-pinkFloyd*/
-  .titulo-pinkFloyd {
+  .intro-pinkFloyd {
+    flex-direction: column-reverse;
     margin: 0;
     padding-top: 60px;
+    align-items: center;
+    gap: 30px;
   }
-  .titulo-pinkFloyd h1 {
-    font-size: 50px;
-    padding-top: 10px;
+  .intro-pinkFloyd h1 {
+    text-align: center;
+    font-size: 150px;
+    padding-top: 30px;
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+  .intro-pinkFloyd a {
+    width: 90%;
+  }
+  .intro-pinkFloyd img {
+    width: 100%;
+    filter: grayscale(0);
   }
   .pinkFloyd {
     gap: 30px;

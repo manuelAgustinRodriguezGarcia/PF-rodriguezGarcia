@@ -5,10 +5,39 @@
   @include fondo-fixed;
 }
 
+.intro-pinkFloyd {
+  display: flex;
+  align-items: center;
+  margin: 0px 30px;
+  margin-top: 76px;
+  gap: 60px;
+  padding: 60px 0px;
+  p {
+    font-size: 50px;
+    margin: 0;
+  }
+  h1 {
+    font-size: 400px;
+    line-height: 75%;
+    margin: 0;
+    text-align: left;
+    @extend .sombra-light;
+  }
+  img {
+    width: 640px;
+    border-radius: 10px;
+    transition: .4s;
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+      box-shadow: 0px 0px 25px 5px rgb(255, 110, 228);
+    }
+  }
+}
+
 .pinkFloyd {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
   width: 100%;
@@ -73,7 +102,7 @@
 
 /*PINK FLOYD - INTEGRANTES*/
 .integrantes {
-  margin-top: 35px;
+  padding-top: 35px;
   color: white;
   display: flex;
   justify-content: center;
