@@ -74,14 +74,8 @@ a {
   font-weight: bold;
   transition: 0.3s;
 }
-.footer-listas-internas-ig {
+.footer-listas-internas-ig, .footer-listas-internas-sp {
   width: 70px;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-.footer-listas-internas-sp {
-  width: 70px;
-  border-radius: 50%;
   transition: 0.3s;
 }
 
@@ -89,8 +83,8 @@ a {
 .navbar {
   background-color: white;
   justify-content: center;
+  z-index: 1;
 }
-
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -111,16 +105,15 @@ a {
   padding: 0px 20px;
 }
 
-.titulo-nav {
+.navbar-brand {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 0;
 }
-
-.titulo-nav a {
+.navbar-brand p {
   font-size: 25px;
   font-weight: bold;
+  color: black;
+  margin: 0;
 }
 
 .container-fluid img {
@@ -170,9 +163,6 @@ a {
 .index-contenido-video {
   border: 3px solid rgb(25, 25, 25);
   border-radius: 10px;
-}
-
-iframe {
   width: 900px;
   height: 500px;
 }
@@ -201,6 +191,7 @@ iframe {
 }
 .intro-pinkFloyd h1 {
   font-size: 400px;
+  width: auto;
   line-height: 75%;
   margin: 0;
   text-align: left;
@@ -208,7 +199,7 @@ iframe {
 .intro-pinkFloyd img {
   width: 640px;
   border-radius: 10px;
-  transition: 0.4s;
+  transition: 0.7s;
   filter: grayscale(1);
 }
 .intro-pinkFloyd img:hover {
@@ -763,7 +754,7 @@ input, textarea {
   color: black;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   /*media-header*/
   .navbar {
     height: 60px;
@@ -777,13 +768,22 @@ input, textarea {
     width: 20px;
     height: 20px;
   }
-  .titulo-nav a {
-    font-size: 20px;
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    align-self: center;
   }
-  .titulo-nav img {
-    height: 25px;
-    width: 25px;
+  .navbar-brand p {
+    font-size: 16px;
+  }
+  .navbar-brand img {
+    height: 40px;
+    width: 40px;
     object-fit: cover;
+  }
+  .container-fluid {
+    display: flex;
+    align-items: center;
   }
   /*media-footer*/
   .footer-listas {
@@ -806,15 +806,11 @@ input, textarea {
     background-image: url("../img/fondo-index-mobile.png");
     height: 600px;
   }
-  iframe {
-    width: 80%;
-    height: 200px;
-  }
   .index-contenido {
     gap: 20px;
   }
   .index-contenido h1 {
-    font-size: 35px;
+    font-size: 45px;
     padding: 0;
     margin-bottom: 0;
   }
@@ -822,6 +818,10 @@ input, textarea {
     margin: 0;
     border-radius: 0;
     font-size: 20px;
+  }
+  .index-contenido iframe {
+    width: 90%;
+    height: 300px;
   }
   /*media-pinkFloyd*/
   .intro-pinkFloyd {
@@ -1098,6 +1098,30 @@ input, textarea {
   }
   .form-datos-sector-input, .form-cancion-sector-radio, .form-album-sector-radio {
     font-size: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .footer-listas h3 {
+    font-size: 18px;
+  }
+  .footer-listas-internas h4 {
+    font-size: 14px;
+  }
+  .footer-listas-internas-ig, .footer-listas-internas-sp {
+    width: 40px;
+  }
+  .index-contenido h1 {
+    font-size: 55px;
+    padding: 15px 0px;
+    margin: 0;
+  }
+  .index-contenido p {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0px;
+  }
+  .index-contenido-video {
+    width: 90%;
   }
 }
 

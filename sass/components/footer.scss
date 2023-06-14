@@ -49,16 +49,9 @@
         font-weight: bold;
         transition: .3s;
       }
-      //logo-instagram
-      &-ig {
+      //logo instagram y spotify
+      &-ig, &-sp{
         width: 70px;
-        border-radius: 20px;
-        transition: .3s;  
-      }
-      //logo-spotify
-      &-sp {
-        width: 70px;
-        border-radius: 50%;
         transition: .3s;
       }
     }

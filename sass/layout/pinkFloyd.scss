@@ -18,6 +18,7 @@
   }
   h1 {
     font-size: 400px;
+    width: auto;
     line-height: 75%;
     margin: 0;
     text-align: left;
@@ -26,7 +27,7 @@
   img {
     width: 640px;
     border-radius: 10px;
-    transition: .4s;
+    transition: .7s;
     filter: grayscale(1);
     &:hover {
       filter: grayscale(0);
