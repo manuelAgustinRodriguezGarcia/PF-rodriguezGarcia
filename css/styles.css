@@ -1323,6 +1323,53 @@ input, textarea {
   .canciones-item p {
     font-size: 18px;
   }
+  .fondo-contacto-fixed {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .titulo-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .titulo-contacto h1 {
+    font-size: 70px;
+    padding: 0;
+    padding-top: 15px;
+  }
+  .titulo-contacto p {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .form {
+    margin: 0;
+  }
+  .form p {
+    font-size: 30px;
+  }
+  .form label {
+    font-size: 20px;
+  }
+  .form-datos p {
+    margin-bottom: 15px;
+  }
+  .form-coment p {
+    margin-bottom: 0;
+  }
+  .form-coment-box {
+    padding-top: 0;
+    height: auto;
+  }
+  .form-coment-box textarea {
+    font-size: 25px;
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
