@@ -525,6 +525,7 @@ a {
 .historia-curiosidades-item h4 {
   padding-top: 15px;
   font-size: 30px;
+  text-align: center;
   margin: 0;
   font-weight: bold;
 }
@@ -1203,6 +1204,124 @@ input, textarea {
   }
   .imagen8 {
     width: 400px;
+  }
+  .titulo-albumes h1 {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 70px;
+  }
+  .carousel {
+    height: auto;
+    align-items: center;
+  }
+  .carousel img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .carousel h5 {
+    font-size: 25px;
+  }
+  .subtitulo-albumes {
+    margin: 0;
+    font-size: 60px;
+  }
+  .albumes {
+    gap: 30px;
+    padding-top: 15px;
+  }
+  .albumes-item {
+    width: 100%;
+    border-radius: 0;
+    padding: 15px;
+    gap: 15px;
+    align-items: center;
+    height: auto;
+  }
+  .albumes-item img {
+    height: 200px;
+  }
+  .albumes-item-texto {
+    height: auto;
+  }
+  .albumes-item-texto h3 {
+    font-size: 24px;
+  }
+  .albumes-item-texto p {
+    font-size: 18px;
+  }
+  .albumes-item-texto a p {
+    font-size: 20px;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  }
+  .introHistoria {
+    margin-top: 76px;
+  }
+  .introHistoria h1 {
+    font-size: 70px;
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+  .introHistoria img {
+    height: 350px;
+    object-fit: cover;
+  }
+  .introHistoria p {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+  }
+  .subtitulo-historia, .subtitulo-historia-canciones {
+    font-size: 60px;
+  }
+  .historia-curiosidades {
+    gap: 30px;
+    padding-bottom: 20px;
+  }
+  .historia-curiosidades-item {
+    width: 95%;
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .historia-curiosidades-item img {
+    width: 250px;
+  }
+  .historia-curiosidades-item-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .historia-curiosidades-item h4 {
+    font-size: 24px;
+    padding: 0;
+    text-align: center;
+  }
+  .historia-curiosidades-item p {
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+  }
+  .canciones {
+    gap: 30px;
+  }
+  .canciones-item {
+    width: 95%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .canciones-item img {
+    height: 200px;
+  }
+  .canciones-item h3 {
+    font-size: 24px;
+    text-shadow: 0px 0px 5px white;
+  }
+  .canciones-item p {
+    font-size: 18px;
   }
 }
 
