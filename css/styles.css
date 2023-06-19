@@ -975,6 +975,7 @@ input, textarea {
   .albumes-item-texto a p {
     font-size: 25px;
     padding-top: 15px;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
   }
   .titulo-albumes {
     padding-top: 0;
@@ -1079,6 +1080,7 @@ input, textarea {
   .form-coment-box textarea {
     font-size: 19px;
     height: 150px;
+    padding: 5px;
   }
   .titulo-contacto {
     text-align: center;
