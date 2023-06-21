@@ -240,14 +240,14 @@ a {
   margin: 0;
 }
 .intro-pinkFloyd h1 {
-  font-size: 400px;
+  font-size: 180px;
   width: auto;
   line-height: 75%;
   margin: 0;
   text-align: left;
 }
 .intro-pinkFloyd img {
-  width: 640px;
+  width: 100%;
   border-radius: 50%;
   transition: 0.7s;
   filter: grayscale(1);
@@ -539,7 +539,7 @@ a {
 }
 .albumes-item-texto {
   width: 100%;
-  height: 300px;
+  height: auto;
   text-align: left;
 }
 

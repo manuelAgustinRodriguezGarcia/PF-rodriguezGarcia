@@ -17,7 +17,7 @@
     margin: 0;
   }
   h1 {
-    font-size: 400px;
+    font-size: 180px;
     width: auto;
     line-height: 75%;
     margin: 0;
@@ -25,7 +25,7 @@
     @extend .sombra-light;
   }
   img {
-    width: 640px;
+    width: 100%;
     border-radius: 50%;
     transition: .7s;
     filter: grayscale(1);
