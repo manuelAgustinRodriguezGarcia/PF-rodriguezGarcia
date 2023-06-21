@@ -21,7 +21,7 @@ a {
   text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
-.sombra-light, .titulo-contacto h1, .subtitulo-historia-canciones, .subtitulo-historia, .introHistoria h1, .albumes-item a p:hover, .titulo-albumes, .intro-pinkFloyd h1, .index-contenido h1 {
+.sombra-light, .titulo-contacto h1, .subtitulo-historia-canciones, .subtitulo-historia, .introHistoria h1, .albumes-item a p:hover, .titulo-albumes, .subtitulo-pinkFloyd, .intro-pinkFloyd h1, .index-contenido h1 {
   text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
@@ -198,7 +198,7 @@ a {
 }
 .intro-pinkFloyd img {
   width: 640px;
-  border-radius: 10px;
+  border-radius: 50%;
   transition: 0.7s;
   filter: grayscale(1);
 }
@@ -265,7 +265,6 @@ a {
   text-align: center;
   padding-top: 15px;
   color: white;
-  text-shadow: 0px 0px 20px black;
   font-weight: bold;
   margin: 0;
 }
@@ -626,7 +625,7 @@ a {
 
 /*CONTACTO*/
 .fondo-contacto-fixed {
-  background-image: url("../img/fondo-contacto.png");
+  background-image: url("../img/the-dark-side-of-the-moon.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -637,6 +636,7 @@ a {
 .titulo-contacto {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.8);
+  width: 100%;
 }
 .titulo-contacto h1 {
   display: inline-block;
@@ -655,15 +655,21 @@ a {
   padding-top: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*FORMULARIOS*/
 .form {
   display: flex;
   flex-direction: column;
   background-color: rgba(25, 25, 25, 0.8);
+  backdrop-filter: blur(5px);
   width: 700px;
   height: auto;
   margin-top: 20px;
-  margin-left: 50px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -844,6 +850,7 @@ input, textarea {
   }
   .intro-pinkFloyd img {
     width: 100%;
+    box-shadow: 0px 0px 25px 5px rgb(255, 110, 228);
     filter: grayscale(0);
   }
   .pinkFloyd {

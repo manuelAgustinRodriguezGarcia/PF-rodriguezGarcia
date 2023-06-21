@@ -1,6 +1,6 @@
 /*CONTACTO*/
 .fondo-contacto-fixed{
-  background-image: url('../img/fondo-contacto.png');
+  background-image: url('../img/the-dark-side-of-the-moon.png');
   @include fondo-fixed;
   padding-bottom: 20px;
 }
@@ -8,6 +8,7 @@
 .titulo-contacto{
   text-align: center;
   background-color: rgb(25, 25, 25, 0.800);
+  width: 100%;
   h1 {
     display: inline-block;
     margin-top: 75px;
@@ -26,16 +27,20 @@
     padding-top: 0;
   }
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /*FORMULARIOS*/
 .form {
   display: flex;
   flex-direction: column;
   background-color: rgba(25, 25, 25, 0.800);
+  backdrop-filter: blur(5px);
   width: 700px;
   height: auto;
   margin-top: 20px;
-  margin-left: 50px;
   padding: 20px;
   border-radius: 5px;
   &-datos {

@@ -26,7 +26,7 @@
   }
   img {
     width: 640px;
-    border-radius: 10px;
+    border-radius: 50%;
     transition: .7s;
     filter: grayscale(1);
     &:hover {
@@ -96,7 +96,7 @@
   text-align: center;
   padding-top: 15px;
   color: white;
-  text-shadow: 0px 0px 20px black;
+  @extend .sombra-light;
   font-weight: bold;
   margin: 0;
 }
