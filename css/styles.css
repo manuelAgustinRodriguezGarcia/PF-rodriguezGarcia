@@ -81,28 +81,74 @@ a {
 
 /*HEADER*/
 .navbar {
-  background-color: white;
+  background-color: rgb(25, 25, 25);
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar-nav {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
+.navbar-toggler {
+  transition: 0.5s;
+  background-color: white;
+  border: none;
+}
+.navbar-toggler:hover {
+  box-shadow: 0px 0px 5px white;
+}
 
 .offcanvas-header {
   justify-content: right;
+  background-color: rgb(25, 25, 25);
+}
+
+.btn-close {
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.navbar {
+  --bs-navbar-active-color: rgba(white, 1);
+}
+
+.nav-link:focus {
+  color: white;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: white;
+  border-color: white;
+}
+.dropdown-divider {
+  border-color: white;
 }
 
 .nav-link {
   padding: 0;
   font-size: 20px;
   font-weight: bold;
+  color: white;
+  transition: 0.7s;
+}
+.nav-link:hover {
+  color: white;
+  text-shadow: 0px 0px 5px white;
+}
+
+.dropdown-menu {
+  background-color: rgb(25, 25, 25);
+}
+.dropdown-item {
+  transition: 0.5s;
+  color: white;
 }
 
 .offcanvas-body {
   padding: 0px 20px;
+  background-color: rgb(25, 25, 25);
 }
 
 .navbar-brand {
@@ -112,8 +158,12 @@ a {
 .navbar-brand p {
   font-size: 25px;
   font-weight: bold;
-  color: black;
+  color: white;
   margin: 0;
+  transition: 0.4s;
+}
+.navbar-brand p:hover {
+  text-shadow: 0px 0px 5px;
 }
 
 .container-fluid img {
@@ -636,11 +686,12 @@ a {
 .titulo-contacto {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.8);
+  backdrop-filter: blur(5px);
   width: 100%;
+  padding-top: 80px;
 }
 .titulo-contacto h1 {
   display: inline-block;
-  margin-top: 75px;
   margin-bottom: 0;
   padding: 20px;
   padding-bottom: 15px;
@@ -650,7 +701,7 @@ a {
 }
 .titulo-contacto p {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   padding: 20px;
   padding-top: 0;
 }
@@ -776,6 +827,7 @@ input, textarea {
     height: 20px;
   }
   .navbar-brand {
+    text-shadow: 0px 0px 3px white;
     margin: 0;
     padding: 0;
     align-self: center;
@@ -840,7 +892,7 @@ input, textarea {
   }
   .intro-pinkFloyd h1 {
     text-align: center;
-    font-size: 150px;
+    font-size: 120px;
     padding-top: 30px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -1093,6 +1145,7 @@ input, textarea {
     text-align: center;
     background-color: rgba(25, 25, 25, 0.8);
     margin: 0;
+    padding: 0;
   }
   .titulo-contacto h1 {
     font-size: 60px;
@@ -1119,6 +1172,9 @@ input, textarea {
   }
   .footer-listas-internas-ig, .footer-listas-internas-sp {
     width: 40px;
+  }
+  .navbar-brand {
+    text-shadow: 0px 0px 5px white;
   }
   .index-contenido h1 {
     font-size: 55px;

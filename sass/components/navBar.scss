@@ -1,27 +1,77 @@
 /*HEADER*/
 .navbar {
-  background-color: white;
+  background-color: $principal;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
   &-nav {
     display: flex;
     flex-direction: column;
     gap: 25px ;
   }
+  &-toggler {
+    transition: .5s;
+    background-color: white;
+    border: none;
+    &:hover {
+      box-shadow: 0px 0px 5px white;
+    }
+  }
 }
 
 .offcanvas-header {
   justify-content: right;
+  background-color: $principal;
+}
+
+.btn-close {
+  background-color: white;
+  transition: .5s;
+  border-radius: 50%;
+}
+
+//cambia color de los links del nav cuando los toca
+.navbar {
+  --bs-navbar-active-color: rgba(white, 1);
+}
+.nav-link:focus {
+  color: white;
+}
+
+.dropdown {
+  &-menu {
+    --bs-dropdown-link-active-bg: white;
+    border-color: white;
+  }
+  &-divider {
+    border-color: white;
+  }
 }
 
 .nav-link {
   padding: 0;
   font-size: 20px;
   font-weight: bold;
+  color: white;
+  transition: .7s;
+  &:hover {
+    color: white;
+    text-shadow: 0px 0px 5px white;
+  }
+}
+
+.dropdown {
+  &-menu {
+    background-color: $principal;
+  }
+  &-item {
+    transition: .5s;
+    color: white;
+  }
 }
 
 .offcanvas-body {
   padding: 0px 20px;
+  background-color: $principal;
 }
 
 .navbar-brand {
@@ -30,8 +80,12 @@
   p {
     font-size: 25px;
     font-weight: bold;
-    color: black;
+    color: white;
     margin: 0;
+    transition: .4s;
+    &:hover {
+      text-shadow: 0px 0px 5px;
+    }
   }
 }
 
